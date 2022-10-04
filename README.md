@@ -1,10 +1,11 @@
 # Can of Books Frontend
 
 **Author**: Cianenry Danan, Julian Gallegos
-**Version**: 1.0.0 (increment the patch/fix version number if you make more commits past your first submission)
+**Version**: 1.0.1 (increment the patch/fix version number if you make more commits past your first submission)
 
 ## Overview
-Lets the user select a book from a gallery of books
+
+Lets the user select a book from a gallery of books and add a book to the data base.
 
 ## Getting Started
 Deployed at: [https://cianenry-julian-can-of-books-frontend.netlify.app/](https://cianenry-julian-can-of-books-frontend.netlify.app/)
@@ -15,6 +16,8 @@ Node.js, Axios, React, React-Bootstrap
 ## Change Log
 
 10-03-2022 5:30pm - Application now has a fully-functional carousel display for book information which is fetched from a back-end server using axios.  
+
+10-4-2022 3:36 PM - Application now lets user add a book to the book data base.
 
 ## Estimates feature 1
 
@@ -51,6 +54,18 @@ Start time: 3:42 PM
 Finish time: 5:17 PM
 
 Actual time needed to complete: 90 minutes
+
+## Estimates feature 4
+
+Name of feature: Be able to create a book
+
+Estimate of time needed to complete: 60 minutes
+
+Start time: 2:00 PM
+
+Finish time: 3:36 PM
+
+Actual time needed to complete: 96 minutes
 
 ## Credit and Collaborations
 <!-- Give credit (and a link) to other people or resources that helped you build this application. -->
