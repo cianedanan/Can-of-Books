@@ -5,6 +5,7 @@ import BookFormModal from './BookFormModal';
 import Button from 'react-bootstrap/Button';
 
 class BestBooks extends React.Component {
+  
   constructor(props) {
     super(props);
     this.state = {
@@ -29,6 +30,19 @@ class BestBooks extends React.Component {
       description: event.target.description.value,
       status: event.target.status.checked
     })
+  }
+
+  handleDelete = async(bookToDelete) => {
+    try {
+      const API = process.env.REACT_APP_URL;
+      const URL = `${API}/books/${bookToDelete._id}`;
+      const response = await axios.delete(URL);
+      console.log(`Response status: ${response.status}`);
+      const filteredBooks = this.state.books.filter(book => book._id !== bookToDelete._id);
+      this.setState({books:filteredBooks});
+    } catch (error) {
+      console.log(error.response);
+    }
   }
 
   handleBookCreate = async (bookInfo) => {
@@ -72,7 +86,7 @@ class BestBooks extends React.Component {
 
         {this.state.books.length > 0 ? (
           <>
-            <Book books={this.state.books} />
+            <Book books={this.state.books} handleDelete={this.handleDelete}/>
           </>
         ) : (
           <h3>No Books Found :(</h3>
