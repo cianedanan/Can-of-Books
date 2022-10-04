@@ -1,7 +1,7 @@
 # Can of Books Frontend
 
 **Author**: Cianenry Danan, Julian Gallegos
-**Version**: 1.0.1 (increment the patch/fix version number if you make more commits past your first submission)
+**Version**: 1.0.2 (increment the patch/fix version number if you make more commits past your first submission)
 
 ## Overview
 

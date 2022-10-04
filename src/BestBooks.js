@@ -29,7 +29,8 @@ class BestBooks extends React.Component {
       title: event.target.title.value,
       description: event.target.description.value,
       status: event.target.status.checked
-    })
+    });
+    this.setModalShowFalse();
   }
 
   handleDelete = async(bookToDelete) => {
