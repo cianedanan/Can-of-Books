@@ -4,7 +4,12 @@ class Profile extends Component {
 
   render() {
     /* TODO: render information about the developers */
-    return <p>Profile page coming soon</p>
+    return (
+      <>
+        <p>Julian Gallegos, Head of GitHub Backend</p>
+        <p>Cianenry Danan, Head of GitHub Frontend</p>
+      </>
+    )
   }
 };
 
