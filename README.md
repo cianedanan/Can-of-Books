@@ -1,25 +1,13 @@
-# Start your own "Can of Books" App
-
-This repository has starter code to begin work on creating your own online bookshelf.
-
-## What can books do?
-
-Books are life-changing. They have the power to enlighten, educate, entertain, heal, and help us grow. Build out this code base to create an web app to track what books have impacted you, and what's recommended to read next.
-
-## Use this template
-
-Clone this repo to your own account with the green "Use this template" button. Then, add any collaborators. Now you are ready to start adding features! Deploy your site to let the world know which books have had the greatest impact on you, and what's recommended. Enjoy!
-
 # Can of Books Frontend
 
-**Author**: Team Member Names Goes Here
+**Author**: Cianenry Danan, Julian Gallegos
 **Version**: 1.0.0 (increment the patch/fix version number if you make more commits past your first submission)
 
 ## Overview
-Lets the user select a book of a gallery of books 
+Lets the user select a book from a gallery of books
 
 ## Getting Started
-<!-- What are the steps that a user must take in order to build this app on their own machine and get it running? -->
+Deployed at: [https://app.netlify.com/sites/cianenry-julian-can-of-books-frontend/overview](https://app.netlify.com/sites/cianenry-julian-can-of-books-frontend/overview)
 
 ## Architecture
 <!-- Provide a detailed description of the application design. What technologies (languages, libraries, etc) you're using, and any other relevant design information. -->
@@ -29,16 +17,41 @@ Lets the user select a book of a gallery of books
 
 01-01-2001 4:59pm - Application now has a fully-functional express server, with a GET route for the location resource. -->
 
-## Estimates
+## Estimates feature 1
+
 Name of feature: Set up repo trello story
 
 Estimate of time needed to complete: 50 minutes
 
 Start time: 1:05 PM
 
-Finish time: 
+Finish time: 2:05 PM
 
-Actual time needed to complete: _____
+Actual time needed to complete: 60 minutes
+
+## Estimates feature 2
+
+Name of feature: Storage trello story
+
+Estimate of time needed to complete: 60 minutes
+
+Start time: 2:57 PM
+
+Finish time: 3:39 PM
+
+Actual time needed to complete: 40 minutes
+
+## Estimates feature 3
+
+Name of feature: Book component trello story
+
+Estimate of time needed to complete: 50 minutes
+
+Start time: 3:42 PM
+
+Finish time: 5:17 PM
+
+Actual time needed to complete: 90 minutes
 
 ## Credit and Collaborations
 <!-- Give credit (and a link) to other people or resources that helped you build this application. -->
