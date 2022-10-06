@@ -21,6 +21,10 @@ Node.js, Axios, React, React-Bootstrap
 
 10-4-2022 4:28 PM - Application now lets user delete a book from the book data base.
 
+10-5-2022 1:32 PM - Server backend now receives update requests, and returns the updated item.
+
+10-5-2022 5:15 PM - Frontend update book functionality implemented.
+
 ## Estimates feature 1
 
 Name of feature: Set up repo trello story
@@ -80,6 +84,18 @@ Start time: 3:50 PM
 Finish time: 4:28 PM
 
 Actual time needed to complete: 38 minutes
+
+## Estimates feature 6
+
+Name of feature: Be able to update a book
+
+Estimate of time needed to complete: 90 minutes
+
+Start time: 12:55 PM
+
+Finish time: 5:15 PM
+
+Actual time needed to complete: 240 minutes (excluding breaks)
 
 ## Credit and Collaborations
 <!-- Give credit (and a link) to other people or resources that helped you build this application. -->
