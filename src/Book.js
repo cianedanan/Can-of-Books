@@ -4,8 +4,12 @@ import Container from 'react-bootstrap/Container';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
 
+
+
+
 class Book extends React.Component {
     render() {
+
         return (
             <>
                 <Container>
@@ -21,7 +25,8 @@ class Book extends React.Component {
                                                 <p>{data.description}</p>
                                             </div>
                                         </div>
-                                        <button onClick={() => this.props.handleDelete(data)} key={idx}>Delete Book</button>
+                                        <button onClick={() => this.props.handleDelete(data)} key={idx + "delete"}>Delete Book</button>
+                                        <button onClick={() => this.props.setUpdateModalTrue(data)} key={idx+ "update"}>Update Book</button>
                                     </div>
                                 </Carousel.Item>
                             );
@@ -32,5 +37,6 @@ class Book extends React.Component {
         );
     }
 }
+
 
 export default Book;

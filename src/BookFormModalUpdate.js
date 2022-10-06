@@ -1,31 +1,31 @@
 import React from 'react';
-import BookForm from './BookForm';
+import UpdateBookForm from './UpdateBookForm';
 import Button from 'react-bootstrap/Button'
 import Modal from 'react-bootstrap/Modal';
 
 import 'bootstrap/dist/css/bootstrap.css';
 
-class BookFormModal extends React.Component {
+class BookFormModalUpdate extends React.Component {
 	render() {
 		return (
 			<>
 				<Modal
-				  show={this.props.modalShow}
+				  show={this.props.modalShowUpdate}
 					size="lg"
 					aria-labelledby="contained-modal-title-vcenter"
 					centered
 				>
-					<Modal.Header closeButton onHide={this.props.setModalShowFalse}>
+					<Modal.Header closeButton onHide={this.props.setUpdateModalFalse}>
 						<Modal.Title id="contained-modal-title-vcenter">
-							Add a Book
+							Update a Book
 						</Modal.Title>
 					</Modal.Header>
 					<Modal.Body>
-						<BookForm handleSubmit={this.props.handleSubmit}/>
+						<UpdateBookForm book={this.props.book} handleUpdate={this.props.handleUpdate}/>
 						
 					</Modal.Body>
 					<Modal.Footer>
-						<Button onClick={this.props.setModalShowFalse}>Close</Button>
+						<Button onClick={this.props.setUpdateModalFalse}>Close</Button>
 					</Modal.Footer>
 				</Modal>
 			</>
@@ -34,4 +34,4 @@ class BookFormModal extends React.Component {
 }
 
 
-export default BookFormModal;
+export default BookFormModalUpdate;
