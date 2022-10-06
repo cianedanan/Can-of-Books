@@ -22,7 +22,7 @@ class UpdateBookForm extends Component {
 			<>
 			
 				<Container>
-					<Form onSubmit={this.props.handleSubmit} >
+					<Form onSubmit={this.handleSubmit} >
 						<Form.Group className="mb-3" controlId="title">
 							<Form.Label>Modify Book Title</Form.Label>
 							<Form.Control placeholder="Updated title" defaultValue={this.props.book.title} />

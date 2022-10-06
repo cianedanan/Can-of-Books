@@ -29,7 +29,7 @@ class BestBooks extends React.Component {
     this.setState({modalShowUpdate: true, book: data})
   }
 
-  setUpdateModalFalse = (data) => {
+  setUpdateModalFalse = () => {
     this.setState({modalShowUpdate: false})
   }
 
@@ -87,11 +87,9 @@ class BestBooks extends React.Component {
 
 
   handleUpdate = async(bookToUpdate) => {
-    
     try{
       const API = process.env.REACT_APP_URL;
       const URL = ` ${API}/books/${bookToUpdate._id}`;
-      console.log(URL + bookToUpdate);
       const updatedBook = await axios.put(URL, bookToUpdate);
       const updatedBookArray = this.state.books.map(existingBook => {
         return existingBook._id === bookToUpdate._id ? updatedBook.data : existingBook;
@@ -102,6 +100,7 @@ class BestBooks extends React.Component {
     }catch(error){
       console.log( 'Update Book Error: ',error.response);
     }
+    this.setUpdateModalFalse();
   } 
 
   componentDidMount() {
